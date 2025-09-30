@@ -1,0 +1,135 @@
+.resume {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resume__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume__name {
+  margin: 0 0 .25rem 0;
+  font-size: 2.4rem;
+}
+
+.resume__title {
+  margin: 0 0 .5rem 0;
+  color: #888;
+}
+
+.resume__summary {
+  margin: 0.5rem 0 0 0;
+}
+
+.resume__contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.resume__contacts li + li {
+  margin-top: .25rem;
+}
+
+.resume__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1rem;
+  padding: .75rem 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  margin-bottom: 1.5rem;
+}
+
+.resume__nav a {
+  font-size: .95rem;
+}
+
+.resume__content {
+  display: grid;
+  gap: 2rem;
+}
+
+.section h2 {
+  margin: 0 0 .75rem 0;
+  font-size: 1.6rem;
+}
+
+.item {
+  padding: 1rem 1rem 0;
+  border-left: 2px solid rgba(100,108,255,.35);
+}
+
+.item__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.item ul {
+  margin: .5rem 0 0 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.project .meta {
+  color: #888;
+  margin: .25rem 0 .5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+  border: 1px solid rgba(255,255,255,.18);
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  font-size: .95rem;
+}
+
+.resume__footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 640px) {
+  .resume__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .resume__contacts {
+    text-align: left;
+  }
+}
